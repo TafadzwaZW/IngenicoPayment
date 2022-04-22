@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="cn.eas.usdk.demo">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="titan.extperm.SETTING_GET" />
+    <uses-permission android:name="titan.extperm.SETTING_SET" />
+    <uses-permission android:name="titan.extperm.CERTIFICATE_SET" />
+    <uses-permission android:name="titan.extperm.STORAGE_GET" />
+    <uses-permission android:name="titan.extperm.USB_SET" />
+    <uses-permission android:name="titan.extperm.USB_GET" />
+    <uses-permission android:name="titan.extperm.PROCESS_SET" />
+    <uses-permission android:name="titan.extperm.TELEPHONY_GET" />
+    <uses-permission android:name="titan.extperm.TELEPHONY_SET" />
+    <uses-permission android:name="titan.extperm.APPLICATION_GET" />
+    <uses-permission android:name="titan.extperm.APPLICATION_SET" />
+    <uses-permission android:name="titan.extperm.SENSITIVEUX_GET" />
+    <uses-permission android:name="titan.extperm.UX_GET" />
+    <uses-permission android:name="titan.extperm.UX_SET" />
+    <uses-permission android:name="titan.extperm.LOCATION_GET" />
+    <uses-permission android:name="titan.extperm.LOCATION_SET" />
+    <uses-permission android:name="titan.extperm.PROPERTY_GET" />
+    <uses-permission android:name="titan.extperm.RESTORE" />
+    <uses-permission android:name="titan.extperm.EMVL1_LOCK_SET" />
+    <uses-permission android:name="titan.extperm.EMVL2_LOCK_SET" />
+    <uses-permission android:name="titan.extperm.NET_SET" />
+    <uses-permission android:name="titan.extperm.UPDATE_GET" />
+    <uses-permission android:name="titan.extperm.UPDATE_SET" />
+    <uses-permission android:name="titan.extperm.PERSIST_SET" />
+    <uses-permission android:name="titan.extperm.PERSIST_GET" />
+    <uses-permission android:name="titan.extperm.DEVICE_ADMIN" />
+
+    <application
+        android:name=".DemoApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".view.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".mymobile.MobileMoneyActivity"></activity>
+        <activity android:name=".view.pinpad.TouchScreenPinEntryActivity" />
+        <activity android:name=".view.AlgorithmActivity" />
+        <activity android:name=".view.BeeperActivity" />
+        <activity android:name=".view.CashBoxActivity" />
+        <activity android:name=".view.DeviceManagerActivity" />
+        <activity android:name=".view.DigledActivity" />
+        <activity android:name=".view.ethernet.EthernetActivity" />
+        <activity android:name=".view.icreader.MenuActivity" />
+        <activity
+            android:name=".view.ScannerActivity"
+            android:theme="@style/Base.Theme.AppCompat.Light" />
+        <activity android:name=".view.emv.MenuActivity" />
+        <activity android:name=".view.InnerScannerActivity" />
+        <activity android:name=".view.ExScannerActivity" />
+        <activity android:name=".view.LedActivity" />
+        <activity android:name=".view.LKIToolActivity" />
+        <activity android:name=".view.MagReaderActivity" />
+        <activity android:name=".view.IndustryMagReaderActivity" />
+        <activity android:name=".view.ParamFileActivity" />
+        <activity android:name=".view.pinpad.MenuActivity" />
+        <activity android:name=".view.PrinterActivity" />
+        <activity android:name=".view.VectorPrinterActivity" />
+        <activity android:name=".view.RFReaderActivity" />
+        <activity android:name=".view.SerialPortActivity" />
+        <activity android:name=".view.UsbDeiceActivity" />
+        <activity android:name=".view.SystemStatisticsActivity" />
+        <activity android:name=".view.TMSActivity" />
+        <activity android:name=".view.SettingActivity" />
+        <activity android:name=".view.SignPanelActivity" />
+        <activity
+            android:name=".view.FelicaReaderActivity"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
+        <activity
+            android:name=".view.FiscalActivity"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
+        <activity android:name=".view.ResetFactoryActivity" />
+        <activity android:name=".myemv.BaseEMVActivity" />
+        <activity android:name=".myemv.StartEMVFirstActivity" />
+        <activity android:name=".view.emv.EMVSettingActivity" />
+        <activity android:name=".view.emv.SearchCardFirstActivity" />
+        <activity android:name=".view.emv.StartEMVFirstActivity" />
+        <activity android:name=".view.emv.StartProcessActivity" />
+        <activity
+            android:name=".view.ethernet.EthernetSettingActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name=".view.pinpad.MKSKActivity"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
+        <activity
+            android:name=".view.pinpad.DUKPTActivity"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
+        <activity
+            android:name=".view.pinpad.FixedKeyActivity"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
+        <activity
+            android:name=".view.pinpad.ExternalActivity"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
+        <activity
+            android:name=".view.pinpad.PineLabsActivity"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
+        <activity
+            android:name=".view.pinpad.RkisActivity"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
+        <activity
+            android:name=".view.pinpad.RkisSettingActivity"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
+        <activity
+            android:name=".view.pinpad.ControlledApiActivity"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
+        <activity android:name=".view.icreader.ICCpuActivity" />
+        <activity android:name=".view.icreader.PSamActivity" />
+        <activity android:name=".view.system.MenuActivity" />
+        <activity android:name=".view.system.UsbActivity" />
+        <activity android:name=".view.system.SettingActivity" />
+        <activity
+            android:name=".view.system.ProcessActivity"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
+        <activity android:name=".view.system.StorageActivity" />
+        <activity
+            android:name=".view.system.KeyChainActivity"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
+        <activity android:name=".view.system.TelephonyActivity" />
+        <activity
+            android:name=".view.system.ApplicationActivity"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
+        <activity android:name=".view.system.InputActivity" />
+        <activity android:name=".view.system.KeyboardActivity" />
+        <activity android:name=".view.system.LocationActivity" />
+        <activity android:name=".view.system.NfcActivity" />
+        <activity android:name=".view.system.StatusBarActivity" />
+        <activity
+            android:name=".view.system.SystemPropertyActivity"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
+        <activity android:name=".view.dock.MenuActivity" />
+        <activity
+            android:name=".view.dock.WifDockActivity"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
+        <activity
+            android:name=".view.dock.WifiDockCustomPairActivity"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
+        <activity android:name=".view.dock.BTDockActivity" />
+        <activity
+            android:name=".view.dock.DockEthernetActivity"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
+        <activity
+            android:name=".view.dock.DockPortActivity"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
+        <activity android:name=".view.dock.DockPortSettingActivity" />
+        <activity android:name=".view.update.UpdateActivity" />
+        <activity android:name=".view.mifare.MenuActivity" />
+        <activity android:name=".view.mifare.DesFireActivity" />
+        <activity
+            android:name=".view.mifare.DesFireApplicationActivity"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
+        <activity
+            android:name=".view.mifare.DesFireFileActivity"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
+        <activity android:name=".view.pinpad.DeriveKeyActivity" />
+        <activity android:name=".view.DecodeEngineActivity" />
+        <activity android:name=".view.onguard.OnGuardActivity" />
+        <activity android:name=".view.onguard.OnGuardSettinigActivity" />
+        <activity android:name=".view.networkmanager.MenuActivity" />
+        <activity android:name=".view.networkmanager.ppp.PPPMenuActivity" />
+        <activity android:name=".view.networkmanager.ppp.PPPServerActivity" />
+        <activity android:name=".view.networkmanager.ppp.PPPClientActivity" />
+        <activity android:name=".view.DeviceAdminActivity" />
+
+        <receiver android:name=".receiver.UpdateResultReceiver">
+            <intent-filter>
+                <action android:name="com.usdk.apiservice.action.update.UPDATE_RESULT" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name=".receiver.ScanResultReceiver">
+            <intent-filter>
+                <action android:name="com.usdk.apiservice.action.scan.scanResult" />
+            </intent-filter>
+        </receiver>
+    </application>
+
+</manifest>

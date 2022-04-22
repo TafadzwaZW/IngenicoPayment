@@ -1,0 +1,296 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin">
+
+    <include layout="@layout/layout_title" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            style="@style/NormalBtn"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:onClick="searchAndActivate"
+            android:text="rf searchAndActivate" />
+
+        <Button
+            style="@style/NormalBtn"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:onClick="stopSearch"
+            android:text="stopSearch" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/edt_file_id"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="input file id"
+            android:imeOptions="actionDone"
+            android:inputType="number" />
+
+        <Button
+            android:layout_gravity="center"
+            style="@style/NormalBtn"
+            android:layout_width="0dp"
+            android:layout_weight="0.8"
+            android:onClick="deleteFile"
+            android:text="deleteFile" />
+
+        <org.angmarch.views.NiceSpinner
+            android:id="@+id/spinner_file_type"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_margin="2dp"
+            android:layout_weight="1.2" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_std_file"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                style="@style/NormalBtn"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:onClick="createStdDataFile"
+                android:text="createStdDataFile" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                style="@style/NormalBtn"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:onClick="writeData"
+                android:text="writeData" />
+
+            <Button
+                style="@style/NormalBtn"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:onClick="readData"
+                android:text="readData" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                style="@style/NormalBtn"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:onClick="writeDataCS"
+                android:text="writeDataCS" />
+
+            <Button
+                style="@style/NormalBtn"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:onClick="readDataCS"
+                android:text="readDataCS" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_linear_record"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                style="@style/NormalBtn"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:onClick="createLinearRecordFile"
+                android:text="createLinearRecordFile" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                style="@style/NormalBtn"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:onClick="writeRecord"
+                android:text="writeRecord" />
+
+            <Button
+                style="@style/NormalBtn"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:onClick="readRecords"
+                android:text="readRecords" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                style="@style/NormalBtn"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:onClick="writeRecordCS"
+                android:text="writeRecordCS" />
+
+            <Button
+                style="@style/NormalBtn"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:onClick="readRecordsCS"
+                android:text="readRecordsCS" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_value_file"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                style="@style/NormalBtn"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:onClick="createValueFile"
+                android:text="createValueFile" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                style="@style/NormalBtn"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:onClick="credit"
+                android:text="credit" />
+
+            <Button
+                style="@style/NormalBtn"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:onClick="debit"
+                android:text="debit" />
+
+            <Button
+                style="@style/NormalBtn"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:onClick="getValue"
+                android:text="getValue" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                style="@style/NormalBtn"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:onClick="creditCS"
+                android:text="creditCS" />
+
+            <Button
+                style="@style/NormalBtn"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:onClick="debitCS"
+                android:text="debitCS" />
+
+            <Button
+                style="@style/NormalBtn"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:onClick="getValueCS"
+                android:text="getValueCS" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_data_written"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/edt_data_written"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="write data"
+            android:singleLine="true"
+            android:imeOptions="actionDone"/>
+
+        <Button
+            android:visibility="invisible"
+            android:id="@+id/btn_commit"
+            style="@style/NormalBtn"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:onClick="commitTransaction"
+            android:text="commitTransaction" />
+    </LinearLayout>
+
+    <include layout="@layout/layout_message" />
+</LinearLayout>

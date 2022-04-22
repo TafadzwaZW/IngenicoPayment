@@ -1,0 +1,39 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_title"/>
+
+    <RadioGroup
+        android:id="@+id/rgIfCleanData"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        style="@style/RadioGroup">
+
+        <RadioButton
+            android:id="@+id/rbCleanData"
+            android:text="@string/clean_system_data"
+            android:checked="true"
+            style="@style/RadioBtn" />
+
+        <RadioButton
+            android:id="@+id/rbNotCleanData"
+            android:text="@string/not_clean_system_data"
+            style="@style/RadioBtn"  />
+    </RadioGroup>
+
+    <Button
+        android:layout_width="match_parent"
+        android:onClick="resetDeep"
+        android:text="resetDeep"
+        style="@style/NormalBtn"/>
+
+    <include layout="@layout/layout_message"/>
+</LinearLayout>

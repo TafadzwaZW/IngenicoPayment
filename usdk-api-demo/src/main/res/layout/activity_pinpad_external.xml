@@ -1,0 +1,77 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical">
+ 
+    <include layout="@layout/layout_title"/>
+	<LinearLayout
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:gravity="center_vertical"
+		android:orientation="horizontal">
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="@string/display_line" />
+
+		<org.angmarch.views.NiceSpinner
+			android:id="@+id/lineSpinner"
+			android:layout_margin="2dp"
+			android:layout_width="65dp"
+			android:layout_height="40dp"
+			/>
+		<EditText
+			android:id="@+id/etMessage"
+			android:layout_width="0dp"
+			android:layout_weight="1"
+			android:layout_height="40dp"
+			android:padding="4dp"
+			android:background="@drawable/normal_button"
+			android:textSize="12sp"
+			android:hint="@string/display_message"/>
+	</LinearLayout>
+	<TextView
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="6dp"
+		android:textSize="12sp"
+		android:textColor="@color/red"
+		android:text="@string/display_line_note"/>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+    	android:orientation="horizontal">
+	    <Button 
+	        android:layout_width="0dp"
+	        android:layout_weight="1"
+	        android:onClick="display"
+	        android:text="display"
+            style="@style/NormalBtn"/>
+	</LinearLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+    	android:orientation="horizontal">
+		<Button
+			android:layout_width="0dp"
+			android:layout_weight="1"
+			android:onClick="reset"
+			android:text="reset"
+			style="@style/NormalBtn"/>
+
+		<Button
+	        android:layout_width="0dp"
+	        android:layout_weight="1"
+	        android:onClick="beep"
+	        android:text="beep"
+            style="@style/NormalBtn"/>
+
+    </LinearLayout>
+
+    <include layout="@layout/layout_message"/>
+</LinearLayout>

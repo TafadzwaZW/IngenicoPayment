@@ -1,0 +1,66 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical">
+ 
+    <include layout="@layout/layout_title"/>
+    
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+    	android:orientation="horizontal">
+ 
+        <Button 
+	        android:layout_width="0dp"
+	        android:layout_weight="1"
+	        android:onClick="TDES"
+			android:text="TDES"
+            style="@style/NormalBtn"/>
+
+		<Button
+			android:layout_width="0dp"
+			android:layout_weight="1"
+			android:onClick="AES"
+			android:text="AES"
+			style="@style/NormalBtn"/>
+
+		<Button
+			android:layout_width="0dp"
+			android:layout_weight="1"
+			android:onClick="getRandom"
+			android:text="getRandom"
+			style="@style/NormalBtn"/>
+	</LinearLayout>
+  
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+    	android:orientation="horizontal">
+	    <Button 
+	        android:layout_width="0dp"
+	        android:layout_weight="1"
+	        android:onClick="SMS4"
+	        android:text="SMS4"
+            style="@style/NormalBtn"/>
+	      
+	    <Button 
+	        android:layout_width="0dp"
+	        android:layout_weight="1"
+	        android:onClick="calcMAC"
+	        android:text="calcMAC"
+            style="@style/NormalBtn"/>
+
+	    <Button
+	        android:layout_width="0dp"
+	        android:layout_weight="1"
+	        android:onClick="SM3"
+	        android:text="SM3"
+            style="@style/NormalBtn"/>
+    </LinearLayout>
+
+    <include layout="@layout/layout_message"/>
+</LinearLayout>

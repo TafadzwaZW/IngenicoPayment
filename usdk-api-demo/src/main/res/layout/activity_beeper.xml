@@ -1,0 +1,89 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_title"/>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/startBtn"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:onClick="beepWhenNormal"
+            android:text="beepWhenNormal"
+            style="@style/NormalBtn"/>
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:onClick="beepWhenError"
+            android:text="beepWhenError"
+            style="@style/NormalBtn"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:onClick="beepWhenInterval"
+            android:text="beepWhenInterval"
+            style="@style/NormalBtn"/>
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:onClick="beepTwoSeconds"
+            android:text="beepTwoSeconds"
+            style="@style/NormalBtn"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:onClick="beepByFrequency"
+            android:text="beepByFrequency"
+            style="@style/NormalBtn"/>
+
+        <org.angmarch.views.NiceSpinner
+            android:id="@+id/frequencySpinner"
+            android:layout_margin="5dp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="40dp"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:onClick="stopBeep"
+            android:text="stopBeep"
+            style="@style/NormalBtn"/>
+
+    </LinearLayout>
+
+</LinearLayout>

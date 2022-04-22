@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">SIS POS</string>
+
+    <string name="main_title"> USDK interface module list </string>
+    <string name="emv_title"> EMV module </string>
+    <string name="ic_title"> Contact card-reader list </string>
+    <string name="pinpad_title"> PINPAD module </string>
+    <string name="system_title"> System module </string>
+    <string name="dock_title"> Dock module </string>
+    <string name="mifare_title"> Mifare Manager Module </string>
+    <string name="message"> Message </string>
+    <string name="clear"> Clear screen </string>
+
+    <string name="not_support_module"> The pos not support this module </string>
+    <string name="not_open_module"> Not support the module, please open in [settings] </string>
+    <string name="coming_soon"> Not develop for the moment, please look forward to it </string>
+    <string name="exception_prompt"> Exception prompt </string>
+    <string name="error_prompt"> Error prompt </string>
+    <string name="pinpad_epp_config"> Please set Pinpad type as external in [settings] </string>
+
+    <string name="register"> Register </string>
+    <string name="unregister"> Unregister </string>
+    <string name="register_success"> Register successfully </string>
+    <string name="unregister_success"> Unregister successfully </string>
+    <string name="register_fail"> Register fail </string>
+    <string name="unregister_fail"> Unregister fail </string>
+
+    <string name="setting"> Setting </string>
+    <string name="save"> save </string>
+    <string name="cancel"> cancel </string>
+    <string name="ok"> ok </string>
+
+    <string name="current_model"> Current model : </string>
+    <string name="led_type"> LED light : </string>
+    <string name="pinpad_type"> Pinpad : </string>
+    <string name="rfreader_type"> Contactless card-reader : </string>
+    <string name="external"> External </string>
+    <string name="inner"> Inner </string>
+    <string name="yes"> Yes </string>
+    <string name="no"> No </string>
+    <string name="common_log_switch"> USDK log switch： </string>
+
+    <string name="camera_type"> Camera Type :  </string>
+    <string name="front"> Front </string>
+    <string name="back"> Back </string>
+
+    <string name="scanner_type"> Scanner type:  </string>
+    <string name="device_name"> Device name:  </string>
+
+    <string name="retain_ctrl_char"> Whether to retain Control Characters: </string>
+    <string name="check_track_state"> Whether to check track state: </string>
+
+    <string name="whole_track_data"> Whole TRK Data: </string>
+    <string name="track_enabled"> Track enabled:  </string>
+    <string name="track1"> Track 1 </string>
+    <string name="track2"> Track 2 </string>
+    <string name="track3"> Track 3 </string>
+
+    <string name="card_type_support"> Card-type support: </string>
+    <string name="card_ic"> Contact </string>
+    <string name="card_rf"> Contactless </string>
+    <string name="card_mag"> Magnetic </string>
+
+    <string name="rf_card_all_types"> Check all contactless card types </string>
+    <string name="loop_search_rf_card"> Loop search rf card </string>
+
+    <string name="shield_confirm_key_with_empty_sign"> Shielding [confirm] key with empty sign : </string>
+
+    <string name="display_line"> Lines/Beep time : </string>
+    <string name="display_message"> Please show the display message </string>
+    <string name="display_line_note"> Displayed lines only support 1 or 2 , other parameters are uesd in test.\nBeep time only support number greater than 0, othera are used in test. </string>
+
+    <string name="request_keyid_prompt"> Please input key ID </string>
+
+    <!-- LED-->
+    <string name="setPhyicalLedEnabled"> enable physical LED lights : </string>
+    <string name="setSimulateLedEnabled"> enable simulated LED lights : </string>
+    <string name="setSimulateLedColor"> the simulated LED light is color : </string>
+
+    <!-- RKIS-->
+    <string name="kapId"> KAP zone : </string>
+    <string name="kms_id"> KMS ID : </string>
+    <string name="terminal_no"> Terminal ID : </string>
+    <string name="merchant_no"> Merchant ID : </string>
+    <string name="is_keyid_from_user"> Whether manul setting secret key index: </string>
+    <string name="key_id"> Key ID:  </string>
+    <string name="start_RKIS"> Start downloading secret key remotely  </string>
+    <string name="request_ip"> Please input IP</string>
+    <string name="request_port"> Please input PORT </string>
+    <string name="request_cid"> Please input customer number </string>
+    <string name="request_tpdu"> Please input TPDU </string>
+    <string name="request_terminalno"> Please input terminal number </string>
+    <string name="request_merchantno"> Please input merchant number </string>
+
+    <!-- ETHERNET -->
+    <string name="local_ip"> Local IP address: </string>
+    <string name="gateway"> Gateway: </string>
+    <string name="mask"> Netmask: </string>
+    <string name="dns1"> DNS 1 : </string>
+    <string name="dns2"> DNS 2: </string>
+    <string name="mac"> Mac address : </string>
+    <string name="connection_type"> Connection type: </string>
+    <string name="dhcp"> DHCP </string>
+    <string name="static_ip"> Static IP </string>
+    <string name="ip_format"> Format：xx.xx.xx.xx </string>
+    <string name="request_localip">  Please input local IP </string>
+    <string name="request_gateway"> Please input gateway </string>
+    <string name="request_mask"> Please input netmask </string>
+    <string name="request_dns1"> Please input DNS 1 </string>
+    <string name="request_dns2"> Please input DNS 2 </string>
+
+    <string name="ethernet_exist"> Whether ethernet module exist: </string>
+    <string name="ethernet_switch"> Ethernet switch： </string>
+    <string name="ethernet_connect_state"> Ethernet connection status： </string>
+
+    <string name="sheet_num"> Print sheet number: </string>
+    <string name="track_type"> Track type: </string>
+
+    <string name="timeout"> Timeout(ms)： </string>
+    <string name="sendData"> Send data： </string>
+
+    <string name="is_singleton"> SingleTon DEMO : </string>
+
+
+    <string name="description_sale"> Straight Sale </string>
+    <string name="description_mobile"> Mobile Purchase</string>
+
+
+    <string name="description_algorithm"> Security algorithm </string>
+    <string name="description_beeper"> Beeper moduel.Realize POS device\'s continuous beep </string>
+    <string name="description_cashbox"> Cashbox operation module </string>
+    <string name="description_devicemanger"> Device managment module. offer device managment interfaces such as getting device information(terminal number, device model,system version, etc), re-start terminal, update terminal time. </string>
+    <string name="description_digled"> Digital managment module. as an accessory equipment, used in some types, it is used to show simple numbers and indicator lignt with special labels, which are different with the main LCD screen. </string>
+    <string name="description_dock"> Dock device, including Bluetooth and WIFI dock </string>
+    <string name="description_emv"> EMV financial transactions module. used to deal with financial card transaction process. </string>
+    <string name="description_ethernet"> Ethernet module, offer interfaces such as open, close, and other relevant settings. </string>
+    <string name="description_exscanner"> External scan gun nodule </string>
+    <string name="description_icreader"> IC contact card-reader moduel </string>
+    <string name="description_innerscanner"> Inner scan head module, realized scan funtion with professional head, which used in terminals with inner scan hardware, such as P990/P950, etc. </string>
+    <string name="description_led"> Device LED module, offer LED light switch function. </string>
+    <string name="description_lki"> Secret key local injection  module. offer local secret key injection/cancel function, used in doownloading main secret key. </string>
+    <string name="description_magreader"> Magnetic stripe card swiper module. offer the funtion of collecting magnetic card data information. </string>
+    <string name="description_industry_magreader"> Industry magnetic card swiper module. offer the function of collecting industry magnetic card data information. </string>
+    <string name="description_paramfile"> Parameter fiels managment module. used to save parameter data that application needs, and can\'t be lost when power off.\n downloading parameter files before using it, please refer to parameter files managment module of 《USDK application development guide》. </string>
+    <string name="description_pinpad"> Pinpad module. used to deal with sensitive data encryption in transaction, such as magnetic track, PIN data and meaasage MAC calculation;and also customer pin\'s safety input. </string>
+    <string name="description_printer"> Printer module. thermal printer offer receipt print function with text, code, QR code, picture. </string>
+    <string name="description_vector_printer"> Vector Printer module. thermal printer offer receipt print function with text, code, QR code, picture. </string>
+    <string name="description_rfreader"> Contactless card-reader module, offer card data interaction of some contactless card business. </string>
+    <string name="description_serialport"> Serial port, offer serial port data\'s receive and send. </string>
+    <string name="description_usbdevice"> Virtual usb device module. offer virtual usbHid and usbCdc functions .</string>
+    <string name="description_systemstatictis"> System statistics module. to get system modules\'usage and quantity state. </string>
+    <string name="description_tms"> Terminal application managment module. offer silent installation and downloading function. </string>
+    <string name="description_signpanel"> Electronic signature board module. S160 electronic signature. </string>
+    <string name="description_system"> System function </string>
+    <string name="description_felicareader"> Felica contactless card-reader module. </string>
+    <string name="description_fiscal"> Fiscal tax control module. </string>
+    <string name="description_mifare"> Mifare manager module that realizing mifare related card operation. </string>
+    <string name="description_decodeengine">DecodEngine module.</string>
+    <string name="description_onGuard"> onGuard module.In order to support P2PE security solution. </string>
+
+    <!-- EMV module-->
+    <string name="emv_setting"> EMV Setting </string>
+    <string name="emvlog_level"> EMV log level： </string>
+    <string name="description_searchcard_first"> Use "searchCard -> startEMV -> respondEvent &amp; stopSearch &amp; stopEMV &amp; halt" serial interfaces to realize EMV process.</string>
+    <string name="description_startemv_first"> Use "startEMV -> searchCard -> respondCard &amp; respondEvent &amp; stopSearch &amp; stopEMV &amp; halt" serial interfaces to realize EMV process.</string>
+    <string name="description_setcardhandle"> Use "startEMV -> searchCard -> setCardHandle &amp; respondEvent &amp; stopSearch &amp; stopEMV &amp; halt" serial interfaces to realize EMV process.</string>
+    <string name="description_setcardhandle2"> Use "startEMV -> setCardHandle &amp; respondEvent &amp; stopSearch &amp; stopEMV &amp; halt" serial interfaces to realize EMV process.</string>
+    <string name="description_startprocess"> Use startProcess &amp; stopProcess serial old interfaces to realize EMV process.\n Note：\n(1)The serials of interfaces has been abandoned, please replace of startEMV serial interfaces.\n(2)The interface does not support magnetic stripe cards. </string>
+
+    <string name="insert_pass_swipe_card"> Please dip/tap/swipe card </string>
+    <string name="insert_pass_card"> Please dip/tap card </string>
+    <string name="pass_card_again"> Please tap card again </string>
+    <string name="pass_card_for_script_update"> Request for updating the card issuing script, please tap card.</string>
+    <string name="pass_card_again_accord_prompt"> Please operate according to the phone prompt and show card again.</string>
+    <string name="unknown_type"> Unknown Type</string>
+
+    <string name="insert_succ"> Dip success </string>
+    <string name="tap_succ"> Tap success </string>
+    <string name="unknown_card_type"> Unknown Card Type</string>
+
+    <!-- contact card-reader module-->
+    <string name="description_at1604"> AT1604 card-reader module </string>
+    <string name="description_at1608"> AT1608 card-reader module</string>
+    <string name="description_at24cxx"> AT24CXX card-reader module</string>
+    <string name="description_iccpu"> ICCPU card-reader module</string>
+    <string name="description_psam"> PSam card-reader module</string>
+    <string name="description_sim4428"> SIM4428 card-reader module</string>
+    <string name="description_sim4442"> SIM4442 card-reader module</string>
+
+    <!-- PINPAD module-->
+    <string name="description_mksk">use MK/SK secret key managment system </string>
+    <string name="description_dukpt">use DUKPT（Derived Unique Key per Transaction) secret key managment system</string>
+    <string name="description_fixed">use  FIXED_KEY secret key managment system</string>
+    <string name="description_external">external pinpad unique interface</string>
+    <string name="description_rkis">short for Remote Key Injection System, inculed KMS and its WEB page managment system. \n this module uses asymmetric secret key version</string>
+    <string name="description_pinelabs">PINELABS custom remote key downloading scheme</string>
+    <string name="description_cogeban">Italy Cogeban Pinpad Interfaces</string>
+    <string name="description_derive_key">Spain Key Injection</string>
+    <string name="admin_ctrled_api">Admin Controlled permission Interfaces</string>
+    <string name="touch_screen_pin">Touch Screen Pin Entry</string>
+
+    <!-- error code meaning that RKIS server returned-->
+    <string name="rkis_retinfo_00">Success</string>
+    <string name="rkis_retinfo_01">No this type of transaction</string>
+    <string name="rkis_retinfo_02">No this manufactory label</string>
+    <string name="rkis_retinfo_03">No this terminaltype label</string>
+    <string name="rkis_retinfo_04">No this hardware serial number</string>
+    <string name="rkis_retinfo_05">Can\'t register merchant and terminal number</string>
+    <string name="rkis_retinfo_06">Identification error in authentication phase</string>
+    <string name="rkis_retinfo_07">Bi-directional authentication fails</string>
+    <string name="rkis_retinfo_10">No secret key download</string>
+    <string name="rkis_retinfo_70">Session feature code error</string>
+    <string name="rkis_retinfo_71">Illegal certificate</string>
+    <string name="rkis_retinfo_72">Digital signature error</string>
+    <string name="rkis_retinfo_73">Private key signature error</string>
+    <string name="rkis_retinfo_74">Public key encryption fails</string>
+    <string name="rkis_retinfo_89">Secret key data\'s transfer MAC verification fails</string>
+    <string name="rkis_retinfo_96">System fault</string>
+    <string name="rkis_retinfo_98">Secret key error</string>
+    <string name="rkis_retinfo_99">Encryptor response error</string>
+    <string name="rkis_retinfo_unknow">unkown error</string>
+
+
+    <!-- Dock module-->
+    <string name="description_wifi"> WIFI Dock</string>
+    <string name="description_bt"> Bluetooth Dock</string>
+
+    <string name="dock_eth_info">Dock Ethernet Information</string>
+    <string name="networkType">POS Network Type</string>
+
+    <string name="pos_net_channel"> POS Self-Network </string>
+    <string name="dock_net_channel"> Dock ethernet </string>
+
+    <string name="unfold">Unfold</string>
+    <string name="fold">Fold</string>
+
+    <string name="request_timeout"> Please input timeout </string>
+    <string name="request_read_exp_length"> Please input expected length of reading </string>
+    <string name="request_write_length"> Please input length of write </string>
+    <string name="request_data_written"> Please input data to be written </string>
+
+
+    <!-- System module-->
+    <string name="description_usb">USB module</string>
+    <string name="description_setting">Setting module</string>
+    <string name="description_process">Process module</string>
+    <string name="description_storage">External storage mount module</string>
+    <string name="description_telephony">Telephony module</string>
+    <string name="description_keychain">KeyChain module</string>
+    <string name="description_application">Application module</string>
+    <string name="description_input">Device input module</string>
+    <string name="description_keyboard">Keyboard module</string>
+    <string name="description_location">Location module</string>
+    <string name="description_nfc">NFC module</string>
+    <string name="description_status_bar">Status bar module</string>
+    <string name="description_system_property">System property module</string>
+
+    <string name="excludePackageNames"> Exclude-APP:  </string>
+    <string name="timezone_list"> System\'s available time zone list: </string>
+    <string name="screen_timeout_list"> Sleep: </string>
+    <string name="auto_timezone_enabled"> Automatic time zone enabled: </string>
+    <string name="cellular_data_enabled"> Cellular Data enabled :  </string>
+    <string name="alias"> Cert alias:  </string>
+    <string name="is_grant">  Whether to grant:  </string>
+    <string name="minutes"> minutes </string>
+    <string name="seconds"> seconds </string>
+    <string name="minute"> minute </string>
+    <string name="second"> second </string>
+    <string name="milliseconds"> milliseconds </string>
+
+    <string name="language_list"> language : </string>
+    <string name="ime_list"> IME list : </string>
+
+    <string name="homekey_enabled"> Home key enabled : </string>
+    <string name="navigation_bar_enabled"> Navigation bar enabled : </string>
+    <string name="status_bar_enabled"> Status bar enabled : </string>
+
+    <string name="ethernet_set_config_prompt">Please check the parameter items that need to be set.</string>
+    <string name="dmz_enable">enable</string>
+    <string name="dmz_disable">disable</string>
+
+    <string name="emvlock_enable">enable</string>
+    <string name="emvlock_disable">disable</string>
+
+    <!-- MifareManager-->
+    <string name="description_desfire"> DesFire module </string>
+    <string name="description_desfire_application"> DesFire module，application related interfaces. </string>
+    <string name="description_desfire_file"> DesFiremodule，file related interfaces.</string>
+    <string name="desfire_apdu_style_mode"> ApduStyleMode </string>
+    <string name="desfire_chaining_mode"> ChainingMode </string>
+
+    <!-- Scanner-->
+    <string name="description_scanner"> Pre/Post scanner module. </string>
+    <string name="enable_fix_focus"> Whether enable fix focus</string>
+    <string name="front_show_default_preview_ui"> Whether show default preview ui by pre scanner </string>
+    <string name="guide_light"> Guide light </string>
+    <string name="fill_light"> Fill light </string>
+    <string name="indicant_light"> Indicant light </string>
+    <string name="no_show_ui"> No UI </string>
+    <string name="hid_scan"> HID sweep code mode </string>
+    <string name="enableOutputBroadcast"> Broadcast the scan results </string>
+    <string name="autoAddTABChar"> Add TAG characters </string>
+    <string name="autoAddCarriageReturnChar"> add carriage return characters </string>
+    <string name="charConvertToKey"> Turn the character to the key </string>
+    <!-- ResetFactory-->
+    <string name="description_resetfactory"> Reset module interface </string>
+    <string name="clean_system_data"> Clean system data </string>
+    <string name="not_clean_system_data"> Do not clean system data </string>
+
+    <string name="description_update"> Update module，Update service related interface</string>
+
+    <string name="color_picker"> Color Picker </string>
+    <!-- NetWorkManager-->
+    <string name="net_work_manager_title"> NetWorkManager module</string>
+    <string name="description_net_work_manager"> NetWorkManager module</string>
+    <string name="description_ppp_client"> ppp communication, as a client</string>
+    <string name="description_ppp_service"> ppp communication, as a service</string>
+    <string name="description_ppp"> 2 terminals communicate using ppp protocol</string>
+
+    <!-- 设备管理模块-->
+    <string name="device_admin_title"> DeviceAdmin module</string>
+
+    <string name="device_idcardreader_title">IDCardReader module</string>
+    <string name="title_activity_eco_cash">EcoCashActivity</string>
+    <string name="tab_text_1">Tab 1</string>
+    <string name="tab_text_2">Tab 2</string>
+</resources>

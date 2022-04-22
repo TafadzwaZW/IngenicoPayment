@@ -1,0 +1,123 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical">
+ 
+    <include layout="@layout/layout_title"/>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+    	android:orientation="horizontal">
+	    <Button 
+	        android:layout_width="0dp"
+	        android:layout_weight="1"
+	        android:onClick="isKeyExist"
+	        android:text="isKeyExist"
+            style="@style/NormalBtn"/>
+	      
+	    <Button 
+	        android:layout_width="0dp"
+	        android:layout_weight="1"
+	        android:onClick="deleteKey"
+	        android:text="deleteKey"
+            style="@style/NormalBtn"/>
+    </LinearLayout>
+
+	<LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+    	android:orientation="horizontal">
+	    <Button
+	        android:layout_width="0dp"
+	        android:layout_weight="1"
+	        android:onClick="loadPlainTextKey"
+	        android:text="loadPlainTextKey"
+            style="@style/NormalBtn"/>
+
+		<Button
+			android:layout_width="0dp"
+			android:layout_weight="1"
+			android:onClick="startPinEntry"
+			android:text="startPinEntry"
+			style="@style/NormalBtn"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+    	android:orientation="horizontal">
+		<Button
+			android:layout_width="0dp"
+			android:layout_weight="1"
+			android:onClick="encryptMagTrack"
+			android:text="encryptMagTrack"
+			style="@style/NormalBtn"/>
+	    <Button
+	        android:layout_width="0dp"
+	        android:layout_weight="1"
+	        android:onClick="calcMAC"
+	        android:text="calcMAC"
+            style="@style/NormalBtn"/>
+
+    </LinearLayout>
+	<LinearLayout
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:orientation="horizontal">
+		<Button
+			android:layout_width="0dp"
+			android:layout_weight="1"
+			android:onClick="calcHMAC"
+			android:text="calcHMAC"
+			style="@style/NormalBtn"/>
+
+		<Button
+			android:layout_width="0dp"
+			android:layout_weight="1"
+			android:onClick="calcHmacDofinal"
+			android:text="calcHmacDofinal"
+			style="@style/NormalBtn"/>
+	</LinearLayout>
+	<LinearLayout
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:orientation="horizontal">
+		<Button
+			android:layout_width="0dp"
+			android:layout_weight="1"
+			android:onClick="hmacVerifyOneshot"
+			android:text="hmacVerifyOneshot"
+			style="@style/NormalBtn"/>
+		<Button
+			android:layout_width="0dp"
+			android:layout_weight="1"
+			android:onClick="hmacVerify"
+			android:text="hmacVerify"
+			style="@style/NormalBtn"/>
+	</LinearLayout>
+
+	<LinearLayout
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:orientation="horizontal">
+		<Button
+			android:layout_width="0dp"
+			android:layout_weight="1"
+			android:onClick="getHmacKcv"
+			android:text="getHmacKcv"
+			style="@style/NormalBtn"/>
+		<Button
+			android:layout_width="0dp"
+			android:layout_weight="1"
+			android:onClick="loadPinKeyWithFixKey"
+			android:text="loadPinKeyWithFixKey"
+			style="@style/NormalBtn"/>
+	</LinearLayout>
+    <include layout="@layout/layout_message"/>
+</LinearLayout>

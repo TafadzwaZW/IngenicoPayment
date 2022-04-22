@@ -1,0 +1,97 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical">
+ 
+    <include layout="@layout/layout_title"/>
+    
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+		android:paddingLeft="10dp"
+		android:gravity="center_vertical"
+    	android:orientation="horizontal">
+		<TextView
+			android:layout_width="0dp"
+			android:layout_weight="1"
+			android:layout_height="wrap_content"
+			android:text="Device Name : " />
+
+		<org.angmarch.views.NiceSpinner
+			android:id="@+id/deviceSpinner"
+			android:layout_margin="5dp"
+			android:layout_width="0dp"
+			android:layout_weight="2"
+			android:layout_height="40dp"
+			 />
+    </LinearLayout>
+
+	<LinearLayout
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:paddingLeft="5dp"
+		android:paddingTop="20dp"
+		android:paddingBottom="20dp"
+		android:gravity="center_vertical"
+		android:orientation="horizontal">
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginRight="10dp"
+			android:text="@string/shield_confirm_key_with_empty_sign" />
+
+		<CheckBox
+			android:id="@+id/shieldCBox"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:checked="true"
+			android:button="@null"
+			android:background="@android:color/transparent"
+			android:drawableLeft="@drawable/selector_checkbox"
+			android:drawablePadding="5dp"
+			android:textSize="12sp"
+			android:text="@string/yes" />
+	</LinearLayout>
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+    	android:orientation="horizontal">
+	    <Button 
+	        android:layout_width="0dp"
+	        android:layout_weight="1"
+	        android:onClick="open"
+	        android:text="open"
+            style="@style/NormalBtn"/>
+
+	    <Button 
+	        android:layout_width="0dp"
+	        android:layout_weight="1"
+	        android:onClick="close"
+	        android:text="close"
+            style="@style/NormalBtn"/>
+    </LinearLayout>
+	<LinearLayout
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:orientation="horizontal">
+		<Button
+			android:layout_width="0dp"
+			android:layout_weight="1"
+			android:onClick="getParameter"
+			android:text="getParameter"
+			style="@style/NormalBtn"/>
+		<Button
+			android:layout_width="0dp"
+			android:layout_weight="1"
+			android:onClick="startSign"
+			android:text="startSign"
+			style="@style/NormalBtn"/>
+	</LinearLayout>
+
+    <include layout="@layout/layout_message"/>
+</LinearLayout>

@@ -1,0 +1,42 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_title"/>
+
+    <ListView
+        android:layout_below="@+id/layoutTitle"
+        android:layout_above="@+id/layoutBottom"
+        android:id="@+id/mainListView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:scrollbarThumbVertical="@color/blue_normal"
+        android:scrollbarSize="2dp"
+        >
+    </ListView>
+
+    <LinearLayout
+        android:id="@+id/layoutBottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="7dp"
+        android:gravity="center"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/tvJarVer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:gravity="left"
+            android:textSize="12sp" />
+        <TextView
+            android:id="@+id/tvServiceVer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+</RelativeLayout>

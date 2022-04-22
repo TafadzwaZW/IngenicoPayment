@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layoutTitle"
+    android:layout_width="match_parent"
+    android:layout_height="48dp"
+    android:gravity="center_vertical" >
+    <RelativeLayout
+        android:id="@+id/layoutRegister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/tvRegister"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:drawableLeft="@drawable/selector_register"
+            android:drawablePadding="3dp"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical"
+            android:enabled="true"
+            android:text="@string/register"
+            android:textSize="12sp"
+            android:textColor="@drawable/selector_textcolor_register"
+            android:padding="10dp"
+            />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:textStyle="bold" />
+    <ImageView
+        android:id="@+id/ivSetting"
+        android:layout_width="48dp"
+        android:layout_height="match_parent"
+        android:padding="10dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:visibility="gone"
+        android:src="@drawable/set_icon"/>
+    <TextView
+        android:layout_alignParentBottom="true"
+        android:layout_width="fill_parent"
+        android:layout_height="0.2dp"
+        android:background="#cccccc"/>
+</RelativeLayout>

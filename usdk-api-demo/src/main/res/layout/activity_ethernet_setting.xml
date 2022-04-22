@@ -1,0 +1,158 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical">
+ 
+    <include layout="@layout/layout_title"/>
+	<LinearLayout
+		style="@style/RadioLinearlayout">
+		<TextView
+			style="@style/RadioTitle"
+			android:textStyle="normal"
+			android:text="@string/connection_type" />
+
+		<RadioGroup
+			android:id="@+id/typeRadioGroup"
+			style="@style/RadioGroup">
+
+			<RadioButton
+				android:id="@+id/dhcpRadio"
+				android:text="@string/dhcp"
+				android:checked="true"
+				style="@style/RadioBtn"
+				android:layout_marginLeft="0dp"/>
+
+			<RadioButton
+				android:id="@+id/staticRadio"
+				android:text="@string/static_ip"
+				style="@style/RadioBtn"  />
+		</RadioGroup>
+	</LinearLayout>
+
+	<LinearLayout
+		android:id="@+id/llStatic"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:orientation="vertical">
+		<LinearLayout
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:padding="5dp"
+			android:gravity="center_vertical"
+			android:orientation="horizontal">
+			<TextView
+				android:layout_width="0dp"
+				android:layout_weight="1"
+				android:layout_height="wrap_content"
+				android:text="@string/local_ip" />
+
+			<EditText
+				android:id="@+id/etLocalIp"
+				style="@style/NormalEdit"
+				android:layout_weight="1.5"
+				android:imeOptions="actionNext"
+				android:maxLength="15"
+				android:hint="@string/ip_format"  />
+		</LinearLayout>
+		<LinearLayout
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:padding="5dp"
+			android:gravity="center_vertical"
+			android:orientation="horizontal">
+			<TextView
+				android:layout_width="0dp"
+				android:layout_weight="1"
+				android:layout_height="wrap_content"
+				android:text="@string/gateway" />
+
+			<EditText
+				android:id="@+id/etGateway"
+				style="@style/NormalEdit"
+				android:layout_weight="1.5"
+				android:imeOptions="actionNext"
+				android:maxLength="15"
+				android:hint="@string/ip_format"  />
+		</LinearLayout>
+		<LinearLayout
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:padding="5dp"
+			android:gravity="center_vertical"
+			android:orientation="horizontal">
+			<TextView
+				android:layout_width="0dp"
+				android:layout_weight="1"
+				android:layout_height="wrap_content"
+				android:text="@string/mask" />
+
+			<EditText
+				android:id="@+id/etMask"
+				style="@style/NormalEdit"
+				android:layout_weight="1.5"
+				android:imeOptions="actionNext"
+				android:maxLength="15"
+				android:hint="@string/ip_format"  />
+		</LinearLayout>
+		<LinearLayout
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:padding="5dp"
+			android:gravity="center_vertical"
+			android:orientation="horizontal">
+			<TextView
+				android:layout_width="0dp"
+				android:layout_weight="1"
+				android:layout_height="wrap_content"
+				android:text="@string/dns1" />
+
+			<EditText
+				android:id="@+id/etDns1"
+				style="@style/NormalEdit"
+				android:layout_weight="1.5"
+				android:imeOptions="actionNext"
+				android:maxLength="15"
+				android:hint="@string/ip_format"  />
+		</LinearLayout>
+		<LinearLayout
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:padding="5dp"
+			android:gravity="center_vertical"
+			android:orientation="horizontal">
+			<TextView
+				android:layout_width="0dp"
+				android:layout_weight="1"
+				android:layout_height="wrap_content"
+				android:text="@string/dns2" />
+
+			<EditText
+				android:id="@+id/etDns2"
+				style="@style/NormalEdit"
+				android:layout_weight="1.5"
+				android:imeOptions="actionDone"
+				android:maxLength="15"
+				android:hint="@string/ip_format"  />
+		</LinearLayout>
+	</LinearLayout>
+
+	<LinearLayout
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="50dp"
+		android:orientation="horizontal">
+
+		<Button
+			android:layout_width="0dp"
+			android:layout_weight="1"
+			android:onClick="save"
+			android:text="@string/save"
+			style="@style/NormalBtn"/>
+
+	</LinearLayout>
+</LinearLayout>

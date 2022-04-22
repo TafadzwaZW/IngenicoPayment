@@ -1,0 +1,189 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin">
+
+    <include layout="@layout/layout_title" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="8dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="system property : " />
+
+        <EditText
+            android:id="@+id/edt_property"
+            android:text="ro.build.product"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.5" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            style="@style/NormalBtn"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:onClick="getSystemProperty"
+            android:text="getSystemProperty" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:background="@color/gray"/>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RadioGroup
+            android:id="@+id/rgState"
+            android:layout_width="match_parent"
+            style="@style/RadioGroup">
+            <RadioButton
+                android:id="@+id/rbEnable"
+                android:text="@string/emvlock_enable"
+                android:checked="true"
+                style="@style/RadioBtn"/>
+
+            <RadioButton
+                android:id="@+id/rbDisable"
+                android:text="@string/emvlock_disable"
+                style="@style/RadioBtn"  />
+        </RadioGroup>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="EMVL1Type: "/>
+
+            <org.angmarch.views.NiceSpinner
+                android:id="@+id/spEMVL1Type"
+                android:layout_margin="2dp"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="40dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <Button
+                style="@style/NormalBtn"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:onClick="setEMVL1State"
+                android:text="setEMVL1State" />
+
+            <Button
+                style="@style/NormalBtn"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_marginLeft="10dp"
+                android:onClick="getEMVL1State"
+                android:text="getEMVL1State" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="EMVL2Type: "/>
+
+            <org.angmarch.views.NiceSpinner
+                android:id="@+id/spEMVL2Type"
+                android:layout_margin="2dp"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="40dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <Button
+                style="@style/NormalBtn"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:onClick="setEMVL2State"
+                android:text="setEMVL2State" />
+
+            <Button
+                style="@style/NormalBtn"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_marginLeft="10dp"
+                android:onClick="getEMVL2State"
+                android:text="getEMVL2State" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="8dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="p2pe flag property : " />
+
+        <EditText
+            android:id="@+id/edt_p2pe_flag"
+            android:text="p2pe"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.5" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            style="@style/NormalBtn"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:onClick="getP2peFlag"
+            android:text="getP2peFlag" />
+        <Button
+            style="@style/NormalBtn"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:onClick="setP2peFlag"
+            android:text="setP2peFlag" />
+    </LinearLayout>
+    <include layout="@layout/layout_message" />
+</LinearLayout>

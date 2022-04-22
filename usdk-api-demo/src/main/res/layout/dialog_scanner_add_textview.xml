@@ -1,0 +1,345 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="250dp"
+    android:layout_height="wrap_content"
+    android:layout_centerHorizontal="true"
+    android:layout_centerVertical="true"
+    android:layout_gravity="center"
+    android:background="@drawable/shape_white_normal"
+    android:orientation="vertical"
+    android:padding="15dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="text:" />
+
+        <EditText
+            android:id="@+id/edt_text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:imeOptions="actionDone"
+            android:singleLine="true" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:text="textSize:" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:gravity="center">
+
+            <ImageButton
+                android:id="@+id/btn_textsize_minus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/minus" />
+
+            <EditText
+                android:id="@+id/edt_textsize"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:inputType="number"
+                android:text="18" />
+
+            <ImageButton
+                android:id="@+id/btn_textsize_plus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/plus" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="textColor:" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:background="@color/black"
+            android:padding="1dp">
+
+            <Button
+                android:id="@+id/btn_color_picker"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@color/white"
+                android:text="Color Picker" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="gravity:" />
+
+        <org.angmarch.views.NiceSpinner
+            android:id="@+id/spinner_gravity"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_margin="5dp"
+            android:layout_weight="2" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="layoutGravity:" />
+
+        <org.angmarch.views.NiceSpinner
+            android:id="@+id/spinner_layoutgravity"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_margin="5dp"
+            android:layout_weight="2" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="marginTop:" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:gravity="center">
+
+            <ImageButton
+                android:id="@+id/btn_top_minus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/minus" />
+
+            <EditText
+                android:id="@+id/edt_margintop"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:inputType="number"
+                android:text="0" />
+
+            <ImageButton
+                android:id="@+id/btn_top_plus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/plus" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="marginBottom:" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:gravity="center">
+
+            <ImageButton
+                android:id="@+id/btn_bottom_minus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/minus" />
+
+            <EditText
+                android:id="@+id/edt_marginbottom"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:inputType="number"
+                android:text="0" />
+
+            <ImageButton
+                android:id="@+id/btn_bottom_plus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/plus" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="marginLeft:" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:gravity="center">
+
+            <ImageButton
+                android:id="@+id/btn_left_minus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/minus" />
+
+            <EditText
+                android:id="@+id/edt_marginleft"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:inputType="number"
+                android:text="0" />
+
+            <ImageButton
+                android:id="@+id/btn_left_plus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/plus" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="marginRight:" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:gravity="center">
+
+            <ImageButton
+                android:id="@+id/btn_right_minus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/minus" />
+
+            <EditText
+                android:id="@+id/edt_marginright"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:inputType="number"
+                android:text="0" />
+
+            <ImageButton
+                android:id="@+id/btn_right_plus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/plus" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/viewLine"
+        android:layout_width="fill_parent"
+        android:layout_height="0.1dp"
+        android:background="#00FFFF" />
+
+    <LinearLayout
+        android:id="@+id/layoutBtn"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/cancel_btn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@null"
+            android:maxLines="1"
+            android:text="@string/cancel"
+            android:textColor="#0050ef"
+            android:textSize="14sp" />
+
+        <View
+            android:layout_width="0.1dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="#00FFFF" />
+
+        <Button
+            android:id="@+id/ok_btn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@null"
+            android:maxLines="1"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:text="@string/ok"
+            android:textColor="#0050ef"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+</LinearLayout>

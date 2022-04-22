@@ -1,0 +1,182 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical">
+ 
+    <include layout="@layout/layout_title"/>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+    	android:orientation="horizontal">
+        <Button
+	        android:layout_width="0dp"
+	        android:layout_weight="1"
+	        android:onClick="getDockStatus"
+			android:text="getDockStatus"
+            style="@style/NormalBtn"/>
+	</LinearLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+    	android:orientation="horizontal">
+        <Button
+	        android:layout_width="0dp"
+	        android:layout_weight="1"
+	        android:onClick="defaultPairUI"
+			android:text="Default Pair UI"
+            style="@style/NormalBtn"/>
+		<Button
+			android:layout_width="0dp"
+			android:layout_weight="1"
+			android:onClick="customPairUI"
+			android:text="Custom Pair UI"
+			style="@style/NormalBtn"/>
+	</LinearLayout>
+	<LinearLayout
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:orientation="horizontal">
+
+		<Button
+			android:layout_width="0dp"
+			android:layout_weight="1"
+			android:onClick="startDockEthernetDemo"
+			android:text="DockEthernet demo"
+			style="@style/NormalBtn"/>
+
+		<Button
+			android:layout_width="0dp"
+			android:layout_weight="1"
+			android:onClick="startDockPortDemo"
+			android:text="DockPort demo"
+			style="@style/NormalBtn"/>
+	</LinearLayout>
+	<LinearLayout
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:padding="5dp"
+		android:gravity="center_vertical"
+		android:orientation="horizontal">
+		<TextView
+			android:layout_width="0dp"
+			android:layout_weight="0.5"
+			android:layout_height="wrap_content"
+			android:text="DMZ:" />
+
+		<RadioGroup
+			android:id="@+id/rg_dmz"
+			style="@style/RadioGroup">
+			<RadioButton
+				android:id="@+id/rb_dmz_enable"
+				android:text="@string/dmz_enable"
+				style="@style/RadioBtn"/>
+
+			<RadioButton
+				android:id="@+id/rb_dmz_disable"
+				android:text="@string/dmz_disable"
+				android:checked="true"
+				style="@style/RadioBtn"  />
+		</RadioGroup>
+	</LinearLayout>
+
+	<LinearLayout
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:orientation="horizontal">
+
+		<Button
+			android:layout_width="0dp"
+			android:layout_weight="1"
+			android:onClick="setDmzEnabled"
+			android:text="setDmzEnabled"
+			style="@style/NormalBtn"/>
+
+		<Button
+			android:layout_width="0dp"
+			android:layout_weight="1"
+			android:onClick="getDmzEnableState"
+			android:text="getDmzEnableState"
+			style="@style/NormalBtn"/>
+	</LinearLayout>
+
+	<LinearLayout
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:orientation="horizontal">
+
+		<Button
+			android:layout_width="0dp"
+			android:layout_weight="1"
+			android:onClick="getVersion"
+			android:text="getVersion"
+			style="@style/NormalBtn"/>
+
+		<Button
+			android:layout_width="0dp"
+			android:layout_weight="1"
+			android:onClick="getConfig"
+			android:text="getConfig"
+			style="@style/NormalBtn"/>
+
+		<Button
+			android:layout_width="0dp"
+			android:layout_weight="1"
+			android:onClick="getConfigsWithFile"
+			android:text="getConfigsWithFile"
+			style="@style/NormalBtn"/>
+	</LinearLayout>
+
+	<LinearLayout
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:orientation="horizontal">
+
+		<Button
+			android:layout_width="0dp"
+			android:layout_weight="1"
+			android:onClick="getHardwareSupportDevices"
+			android:text="getHardwareSupportDevices"
+			style="@style/NormalBtn"/>
+
+		<Button
+			android:layout_width="0dp"
+			android:layout_weight="1"
+			android:onClick="setConfig"
+			android:text="setConfig"
+			style="@style/NormalBtn"/>
+
+		<Button
+			android:layout_width="0dp"
+			android:layout_weight="1"
+			android:onClick="setConfigsWithFile"
+			android:text="setConfigsWithFile"
+			style="@style/NormalBtn"/>
+	</LinearLayout>
+
+	<LinearLayout
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:orientation="horizontal">
+
+		<Button
+			android:layout_width="0dp"
+			android:layout_weight="1"
+			android:onClick="applyConfig"
+			android:text="applyConfig"
+			style="@style/NormalBtn"/>
+
+		<Button
+			android:layout_width="0dp"
+			android:layout_weight="1"
+			android:onClick="updateDock"
+			android:text="updateDock"
+			style="@style/NormalBtn"/>
+	</LinearLayout>
+
+    <include layout="@layout/layout_message"/>
+</LinearLayout>
